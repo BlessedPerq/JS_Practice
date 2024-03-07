@@ -77,12 +77,16 @@ header .container {
   justify-content: center;
 }
 .button-plus, .button-minus {
-  padding: 20px;
-  background-color: #D76F30;
-  margin: 10px;
+  padding: 10px 30px;
+  background-color: #f3975d;
+  margin: 15px 5px;
   border: 1px solid black;
   border-radius: 20px;
   cursor: pointer;
+  transition: 0.2s;
+}
+.button-plus:hover, .button-minus:hover {
+  transform: scale(1.07);
 }
 .attention {
   color: red;
