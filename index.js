@@ -1,21 +1,21 @@
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
+const buttonMore = document.querySelector(".main-button-more");
+const listMainMenu = document.querySelector(".main-menu-list");
+const listItems = document.querySelectorAll(".main-menu-item");
+console.log(listItems)
 
-let isDrawing = false;
+let flag = true;
 
-canvas.addEventListener("mousedown", (e) => {
-  isDrawing = true;
-  ctx.beginPath();
-  ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-});
-
-canvas.addEventListener("mousemove", (e) => {
-  if (isDrawing) {
-    ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
-    ctx.stroke();
+buttonMore.addEventListener("click", () => {
+  console.log("click!");
+  if (flag) {
+    listMainMenu.style.opacity = "100";
+    buttonMore.innerHTML = "Закрыть содержимое";
+    buttonMore.style.transform = "translate(0, 130px)";
+    flag = false;
+  } else {
+    listMainMenu.style.opacity = "0";
+    buttonMore.innerHTML = "Открыть содержимое";
+    buttonMore.style.transform = "translate(0, 0)";
+    flag = true;
   }
-});
-
-canvas.addEventListener("mouseup", (e) => {
-  isDrawing = false;
 });
