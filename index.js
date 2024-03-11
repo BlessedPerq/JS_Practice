@@ -1,7 +1,7 @@
 const buttonMore = document.querySelector(".main-button-more");
 const listMainMenu = document.querySelector(".main-menu-list");
 const listItems = document.querySelectorAll(".main-menu-item");
-console.log(listItems)
+console.log(listItems);
 
 let flag = true;
 
@@ -11,7 +11,7 @@ buttonMore.addEventListener("click", () => {
     listMainMenu.style.opacity = "100";
     listMainMenu.style.visibility = "visible";
     buttonMore.innerHTML = "Закрыть содержимое";
-    buttonMore.style.transform = "translate(0, 230px)";
+    buttonMore.style.transform = "translate(0, 160px)";
     flag = false;
   } else {
     listMainMenu.style.opacity = "0";
