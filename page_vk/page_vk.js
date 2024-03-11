@@ -38,12 +38,10 @@ changePhotoButton.addEventListener("mouseleave", () => {
 });
 
 changePhotoButtonMore.addEventListener("mouseenter", () => {
-    changePhotoButtonMore.style.opacity = "100";
-    changePhotoButtonMore.style.visibility = "visible";
-  
+  changePhotoButtonMore.style.opacity = "100";
+  changePhotoButtonMore.style.visibility = "visible";
 });
 changePhotoButtonMore.addEventListener("mouseleave", () => {
-    changePhotoButtonMore.style.opacity = "0";
-    changePhotoButtonMore.style.visibility = "hidden";
-  
+  changePhotoButtonMore.style.opacity = "0";
+  changePhotoButtonMore.style.visibility = "hidden";
 });

@@ -194,6 +194,7 @@ header .container {
 .button-more a {
   color: rgb(147, 147, 147);
   font-size: 12px;
+  width: fit-content;
 }
 .button-more:hover {
   text-decoration: underline;
@@ -260,6 +261,7 @@ header .container {
   color: white;
   font-size: 12px;
   text-align: left;
+  font-weight: 300;
 }
 .list-header-change-photo-more a {
   padding: 5px;
@@ -272,3 +274,4 @@ header .container {
 .material-icons {
   color: rgb(255, 92, 92);
 }
+
