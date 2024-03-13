@@ -30,7 +30,7 @@ Object.values(colors).forEach((color) => {
     currentColor = color.className;
 
     Object.values(colors).forEach((c) => {
-      if (c.className === currentColor) {
+      if(c.className === currentColor) {
         c.classList.add("active-size");
       } else {
         c.classList.remove("active-size");
