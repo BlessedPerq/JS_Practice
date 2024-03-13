@@ -30,11 +30,12 @@ Object.values(colors).forEach((color) => {
     currentColor = color.className;
 
     Object.values(colors).forEach((c) => {
-      if(c.className === currentColor) {
+      if (c.className === currentColor) {
         c.classList.add("active-size");
       } else {
         c.classList.remove("active-size");
       }
+      
     });
   });
 });
@@ -61,6 +62,8 @@ canvas.addEventListener("mousedown", (e) => {
   isDraw = true;
   ctx.beginPath();
   ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+  console.log(e.clientX, e.clientY, e.pageX, e.offsetX)
+  ctx.stroke();
 });
 
 canvas.addEventListener("mousemove", (e) => {
@@ -76,4 +79,13 @@ canvas.addEventListener("mousemove", (e) => {
 
 canvas.addEventListener("mouseup", (e) => {
   isDraw = false;
+});
+
+canvas.addEventListener("click", (e) => {
+  const x = e.offsetX;
+  const y = e.offsetY;
+  ctx.fillStyle = currentColor;
+  ctx.beginPath();
+  ctx.arc(x, y, currentSizeBrush / 2, 0, 2 * Math.PI);
+  ctx.fill();
 });

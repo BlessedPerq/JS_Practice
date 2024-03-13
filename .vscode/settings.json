@@ -1,0 +1,8 @@
+{
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontWeight": "bold",
+  "editor.fontSize": 16,
+
+  "terminal.integrated.fontFamily": "'Fira Code', monospace",
+  "terminal.integrated.fontWeight": "bold",
+}
