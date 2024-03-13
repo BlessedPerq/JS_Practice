@@ -12,7 +12,7 @@ const colors = {
   pink: document.querySelector(".pink"),
   purple: document.querySelector(".purple"),
   yellow: document.querySelector(".yellow"),
-  eraser: document.querySelector(".eraser"),
+  eraser: document.querySelector(".white"),
 };
 
 let currentColor;
