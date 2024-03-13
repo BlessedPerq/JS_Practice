@@ -47,7 +47,8 @@ header .container {
 #canvas {
   border: 1px solid black;
   border-radius: 20px;
-  background-color: rgb(253, 224, 224);
+  display: block;
+  margin: 0 auto;
 }
 #square {
   background-color: black;
@@ -273,5 +274,59 @@ header .container {
 }
 .material-icons {
   color: rgb(255, 92, 92);
+}
+/* canvas changecolors */
+.container-canvas {
+  margin: 0 auto;
+  width: 1200px;
+}
+.change-props div{
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: 0.15s;
+}
+.small-size-brush, .medium-size-brush, .large-size-brush {
+  background-color: black;
+  border-radius: 20px;
+}
+.change-props div:nth-child(9){
+  width: 12px;
+  height: 12px;
+}
+.change-props div:nth-child(10){
+  width: 17px;
+  height: 17px;
+}
+.change-props div:nth-child(11){
+  width: 20px;
+  height: 20px;
+}
+.change-props div:hover{
+  transform: scale(1.1);
+}
+.content-canvas {
+  margin: 0 auto;
+}
+.change-props {
+  display: flex;
+  margin: 30px auto 10px;
+  width: fit-content;
+  align-items: center;
+}
+.cursor {
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.active-size {
+  transform: scale(1.2);
 }
 
